@@ -44,16 +44,21 @@ T_eq = 315.5491;
 Tc_eq = 308;
 Tr_eq = 308;
 
-A = [-k0*exp(-ER/T_eq) - q0/V, -Ca_eq*ER*k0*exp(-ER/T_eq)/(T_eq^2), 0;
+A_c = [-k0*exp(-ER/T_eq) - q0/V, -Ca_eq*ER*k0*exp(-ER/T_eq)/(T_eq^2), 0;
       ((-dHr)*k0/(ro*Cp))*exp(-ER/T_eq), -q0/V + Ca_eq*((-dHr)*k0/(ro*Cp))*exp(-ER/T_eq)*ER/(T_eq^2) - UA/(V*ro*Cp), UA/(V*ro*Cp);
       0, 0, -1/tau_c];
-B = [0;0;1/tau_c];
-C = [1, 0, 0];
-D = 0;
+B_c = [0;0;1/tau_c];
+C_c = [1, 0, 0];
+D_c = 0;
 
-continuous_time_ss = ss(A,B,C,D);
+continuous_time_ss = ss(A_c,B_c,C_c,D_c);
 
 discrete_time_ss = c2d(continuous_time_ss, Ts);
+
+A = discrete_time_ss.A;
+B = discrete_time_ss.B;
+C = discrete_time_ss.C;
+D = discrete_time_ss.D;
 
 % Matrice di raggiungibilità
 Mr = ctrb(discrete_time_ss);
@@ -69,7 +74,7 @@ Hx = [1,0,0;
       0,-1,0;
       0,0,1;
       0,0,-1];
-hx = [0.954-Ca_eq;-0.38-Ca_eq; 10000; -10000; 10000; -10000];
+hx = [0.954-Ca_eq;-0.38-Ca_eq; 10000000; -1000000; 1000000; -1000000];
 
 Hu = [1;-1];
 hu = [310 - Tr_eq; -280 - Tr_eq];
