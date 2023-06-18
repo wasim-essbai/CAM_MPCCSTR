@@ -65,7 +65,7 @@ Mr = ctrb(discrete_time_ss);
 Mr_rank = rank(Mr);
 
 % Autovalori del sistema
-lambda0 = eig(discrete_time_ss.A);
+lambda0 = eig(A);
 
 %% 3. Vincoli sul sistema linearizzato
 Hx = [1,0,0;
@@ -74,10 +74,10 @@ Hx = [1,0,0;
       0,-1,0;
       0,0,1;
       0,0,-1];
-hx = [0.954-Ca_eq;-0.38-Ca_eq; 10000000; -1000000; 1000000; -1000000];
+hx = [0.954 - Ca_eq; -0.38 + Ca_eq; 10000000; 1000000; 1000000; 1000000];
 
 Hu = [1;-1];
-hu = [310 - Tr_eq; -280 - Tr_eq];
+hu = [310 - Tr_eq; -280 + Tr_eq];
 
 %% 4. Progettazione costo MPC
 
@@ -91,7 +91,3 @@ CIS = Polyhedron(CIS_H,CIS_h);
 figure(1)
 CIS.plot();
 title('\textbf{Control invariant set sistema linearizzato}');
-xlabel('$\theta$ [rad]');
-ylabel('$\dot{\theta}$ [rad/s]');
-xlim([-pi,pi]);
-ylim([-2,2]);
