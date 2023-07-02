@@ -115,6 +115,10 @@ xlim([-0.38 + Ca_eq, 0.954 - Ca_eq]);
 legend({'10-step set', 'Control-invariant set'});
 
 %% 6. Design MPC e simulazione
+
+%% todo inserire il vincolo terminale di disuguaglianza. Dove lo inseriamo?
+
+
 %   Numero di step simulati
 T_sim = 60;
 
