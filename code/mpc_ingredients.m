@@ -1,4 +1,4 @@
-function mpc = mpc_ingredients(A,B,Hx,hx,Hu,hu,x_ref_lin,u_ref_lin,Q,R,N)
+function mpc = mpc_ingredients(A,B,Hx,hx,Hu,hu,CIS_H,CIS_h,x_ref_lin,u_ref_lin,Q,R,N)
     n = size(A,2);
     m = size(B,2);
     n_c_u = size(Hu,1);
@@ -32,10 +32,17 @@ function mpc = mpc_ingredients(A,B,Hx,hx,Hu,hu,x_ref_lin,u_ref_lin,Q,R,N)
         Hx_tilde(i*n_c_x+1:(i+1)*n_c_x,i*n+1:(i+1)*n) = Hx;
     end
     
+    C_H_tilde = zeros(size(CIS_H,1),n*(N+1));
+    C_H_tilde(1:end,end-n+1:end) = CIS_H;
+    
+    Hx_tilde = [Hx_tilde; C_H_tilde];
+    
     hx_tilde = zeros(n_c_x*(N+1),1);
     for i=0:N
         hx_tilde(i*n_c_x+1:(i+1)*n_c_x,1) = hx;
     end
+    
+    hx_tilde = [hx_tilde;CIS_h];
     
     [~,S,~] = dlqr(A,B,Q,R);
     

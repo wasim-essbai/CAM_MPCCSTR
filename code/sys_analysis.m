@@ -116,9 +116,6 @@ legend({'10-step set', 'Control-invariant set'});
 
 %% 6. Design MPC e simulazione
 
-%% todo inserire il vincolo terminale di disuguaglianza. Dove lo inseriamo?
-
-
 %   Numero di step simulati
 T_sim = 60;
 
@@ -130,7 +127,7 @@ u_ref = Tr_eq;
 x_ref_lin = [0; 0; 0];
 u_ref_lin = 0;
 
-mpc = mpc_ingredients(A,B,Hx,hx,Hu,hu,x_ref_lin,u_ref_lin,Q,R,N);
+mpc = mpc_ingredients(A,B,Hx,hx,Hu,hu,CIS_H,CIS_h,x_ref_lin,u_ref_lin,Q,R,N);
 
 %   Log stati e ingresso sistema
 x_log = zeros(3,T_sim+1);
@@ -138,6 +135,7 @@ u_log = zeros(1,T_sim);
 flags = zeros(1,T_sim);
 
 x_log(:,1) = [0.853; 296.986; 292];
+%x_log(:,1) = [0.853; 270; 280]; Non dovrebbe funzionare con N<=3
 
 for tt = 1:T_sim
 
