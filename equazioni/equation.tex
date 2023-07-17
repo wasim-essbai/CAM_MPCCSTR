@@ -15,6 +15,7 @@
 \usepackage{subfig}
 \usetikzlibrary{fit}
 \usepackage[euler]{textgreek}
+\usepackage{mathtools}
 
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -128,4 +129,48 @@
 	\end{bmatrix}$
 	
 	$D= 0$
+	
+	
+	
+	
+	\begin{equation}
+		\begin{aligned}
+			\min_\textbf{u} \quad & J(x(k),u(.))=\sum_{j=0}^{N-1} \lVert x(j)\rVert_Q^2 + \lVert u(j)\rvert_R^2 + \lVert x(N) \rVert_S^2 \\
+			\textrm{s.t.} \quad & x(0) = x(k) \\
+								& x(0) = x(k) \\
+								& x(j+1) = Ax(j) + Bu(j) \\
+								& x(j) \in \mathcal{X}, u(j) \in \mathcal{U} \\
+								& x(N) \in \mathbb{X}_f \\
+		\end{aligned}
+		\text{con } Q=Q'\geq0,S = S' \geq 0, R=R'>0.
+	\end{equation}
+	
+	$\text{dove }x=\begin{bmatrix}
+		x_1 \\
+		x_2 	\\
+		x_3
+	\end{bmatrix}=\begin{bmatrix}
+	C_A \\
+	T \\
+	T_c
+	\end{bmatrix}, \text{e } u = T_r$
+	
+
+	\begin{equation}
+		\begin{aligned}
+			x \in& \mathcal{X} \text{ dato da: } \\
+			0.38 - \overline{C}_A &< x_1 < 0.95 - \overline{C}_A \\
+			 -0.1254 [mol/l] &< x_1 < 0.446 [mol/l] \\
+		\end{aligned}
+	\end{equation}
+	
+	\begin{equation}
+		\begin{aligned}
+			u \in & \mathcal{U} \text{ dato da: } \\
+			280 - \overline{T}_r &< u < 310 - \overline{T}_r \\
+			-28 [K] &< u < 2[K] \\
+		\end{aligned}
+	\end{equation}
+
+	
 \end{document}

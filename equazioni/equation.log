@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.1)  17 JUL 2023 11:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.1)  17 JUL 2023 16:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1152,7 +1152,13 @@ File: greek-fontenc.def 2020/10/30 2.0 Common Greek font encoding definitions
 Package textgreek Info: Loaded fontmap: {phv/*/*}{U/psy/*/*} {*/bx/n}{U/eur/b/n
 } {*/b/n}{U/eur/b/n} {*/*/n}{U/eur/m/n} {*/*/it}{OML/*/*/*}. on input line 69.
 )
-(C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+(C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.st
+y
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+
+(C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+) (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip81
 
@@ -1212,6 +1218,18 @@ LaTeX Info: Redefining \Relbar on input line 971.
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
+\g_MT_multlinerow_int=\count344
+\l_MT_multwidth_dim=\dimen292
+\origjot=\skip84
+\l_MT_shortvdotswithinadjustabove_dim=\dimen293
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen294
+\l_MT_above_intertext_sep=\dimen295
+\l_MT_below_intertext_sep=\dimen296
+\l_MT_above_shortintertext_sep=\dimen297
+\l_MT_below_shortintertext_sep=\dimen298
+\xmathstrut@box=\box84
+\xmathstrut@dim=\dimen299
+)
 (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
@@ -1227,8 +1245,8 @@ Package: frontespizio 2011/09/21 1.4a (Enrico Gregorio)
 (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage.sty
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@output=\toks41
-\AP@partial=\box84
-\AP@footins=\box85
+\AP@partial=\box85
+\AP@footins=\box86
 )
 (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
@@ -1253,17 +1271,17 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count344
-\Gm@cntv=\count345
-\c@Gm@tempcnt=\count346
-\Gm@bindingoffset=\dimen292
-\Gm@wd@mp=\dimen293
-\Gm@odd@mp=\dimen294
-\Gm@even@mp=\dimen295
-\Gm@layoutwidth=\dimen296
-\Gm@layoutheight=\dimen297
-\Gm@layouthoffset=\dimen298
-\Gm@layoutvoffset=\dimen299
+\Gm@cnth=\count345
+\Gm@cntv=\count346
+\c@Gm@tempcnt=\count347
+\Gm@bindingoffset=\dimen300
+\Gm@wd@mp=\dimen301
+\Gm@odd@mp=\dimen302
+\Gm@even@mp=\dimen303
+\Gm@layoutwidth=\dimen304
+\Gm@layoutheight=\dimen305
+\Gm@layouthoffset=\dimen306
+\Gm@layoutvoffset=\dimen307
 \Gm@dimlist=\toks42
 
 (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)
@@ -1278,39 +1296,39 @@ Package siunitx Info: Option "fraction-function" has been deprecated in this
 (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
 ftex.def
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count347
-\l__pdf_internal_box=\box86
+\l__color_backend_stack_int=\count348
+\l__pdf_internal_box=\box87
 ) (equation.aux)
 \openout1 = `equation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 32.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 3
-1.
+2.
 
 (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Info: Redefining \it@ocap on input line 31.
-LaTeX Info: Redefining \it@ccap on input line 31.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Info: Redefining \it@ocap on input line 32.
+LaTeX Info: Redefining \it@ccap on input line 32.
 
 
 File italian.ldf warning: 
@@ -1318,22 +1336,22 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 31.
+italian.ldf    on input line 32.
 
 
 (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count348
-\scratchdimen=\dimen300
-\scratchbox=\box87
-\nofMPsegments=\count349
-\nofMParguments=\count350
+\scratchcounter=\count349
+\scratchdimen=\dimen308
+\scratchbox=\box88
+\nofMPsegments=\count350
+\nofMParguments=\count351
 \everyMPshowfont=\toks43
-\MPscratchCnt=\count351
-\MPscratchDim=\dimen301
-\MPnumerator=\count352
-\makeMPintoPDFobject=\count353
+\MPscratchCnt=\count352
+\MPscratchDim=\dimen309
+\MPnumerator=\count353
+\makeMPintoPDFobject=\count354
 \everyMPtoPDFconversion=\toks44
 )
 (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
@@ -1346,13 +1364,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 31.
+Package hyperref Info: Link coloring OFF on input line 32.
  (equation.out) (equation.out)
 \@outlinefile=\write5
 \openout5 = `equation.out'.
 
 Package translations Info: no dictionary file `translations-basic-dictionary-it
-alian.trsl' found. on input line 31.
+alian.trsl' found. on input line 32.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1391,12 +1409,12 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
 
 (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
 
 
 (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1410,27 +1428,29 @@ Package rerunfilecheck Info: File `equation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30171 strings out of 475385
- 603909 string characters out of 2776435
- 944492 words of memory out of 3000000
- 51070 multiletter control sequences out of 15000+600000
- 470958 words of font info for 36 fonts, out of 8000000 for 9000
+ 30732 strings out of 475385
+ 614576 string characters out of 2776435
+ 958324 words of memory out of 3000000
+ 51618 multiletter control sequences out of 15000+600000
+ 471885 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,10n,133p,465b,889s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmex10.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmmi10.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Matteo/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Matteo/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Matteo/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Matt
-eo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
-Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7
-.pfb>
-Output written on equation.pdf (2 pages, 102028 bytes).
+/cmbx7.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmex10.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Matteo/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Matteo/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Matteo/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Mat
+teo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/U
+sers/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmsy7.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/symbols/msbm10.pfb>
+Output written on equation.pdf (2 pages, 124838 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
+ 88 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
