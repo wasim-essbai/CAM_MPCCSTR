@@ -1,0 +1,131 @@
+\documentclass{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{import}
+\usepackage{todonotes}
+\usepackage{color}
+\usepackage{rotating}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{pdfpages}
+\usepackage{siunitx}
+\usepackage[italiano]{algorithm2e}
+\usepackage{pdflscape}
+\usepackage{subfig}
+\usetikzlibrary{fit}
+\usepackage[euler]{textgreek}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage[signatures,swapnames,sans]{frontespizio}
+
+\usepackage{geometry}
+\geometry{portrait, margin=3cm}
+\usepackage{siunitx}
+\sisetup{
+	per-mode=fraction,
+	fraction-function=\tfrac
+}
+\begin{document}
+	\begin{equation}
+		\begin{cases}
+			\dot{C_A}(t) &= \frac{q_0}{V}\cdot (C_{Af}-C_A(t))-k_0\cdot \exp \left({-\frac{E}{R\cdot T(t)}} \right) \cdot C_A(t) \\[7pt]
+			\dot{T}(t)&=\frac{q_0}{V}\cdot (T_f-T(t))+ \frac{(-\Delta H_r)\cdot k_0}{\rho \cdot C_p}\cdot \exp{\left( -\frac{E}{R \cdot T(t)} \right)}\cdot C_A(t) + \frac{UA}{V\cdot\rho\cdot C_p}\cdot(T_c(t) - T(t))\\[7pt]
+			\dot{T_c}(t) &= \frac{T_r(t)-T_c(t)}{\tau_c}
+		\end{cases}
+	\end{equation}
+	
+	
+	
+	
+	
+	
+	\begin{equation}
+		\overline{x}=
+		\begin{cases}
+			\overline{C}_A &= 0.5054 \\[5pt]
+			\overline{T} &= 315.5491 \\[5pt]
+			\overline{T}_c &= 308			
+		\end{cases}
+	\end{equation}
+	
+	\begin{equation}
+		0 = \frac{\overline{T}_r-\overline{T}_c}{\tau_c} = \frac{\overline{T}_r-308}{\tau_c}
+	\end{equation}
+	$\overline{u} = \overline{T}_r=308$
+	
+	
+	\begin{equation}
+		\begin{cases}
+			\delta\dot{x}(t) &\simeq f_x(\overline{x},\overline{u})\delta x(t) + f_u(\overline{x},\overline{u})\delta u(t) \\[8pt]
+			\delta y(t) &\simeq g_x(\overline{x},\overline{u})\delta x(t) + g_u(\overline{x},\overline{u})\delta u(t)
+		\end{cases}
+	\end{equation}
+	
+	\begin{equation}
+		f_x(\overline{x},\overline{u}) = A =
+		\begin{bmatrix}
+			\frac{\delta f_1}{\delta x_1} & \frac{\delta f_1}{\delta x_2} & \frac{\delta f_1}{\delta x_3} \\[5pt]
+			\frac{\delta f_2}{\delta x_1} & \frac{\delta f_2}{\delta x_2} & \frac{\delta f_2}{\delta x_3} \\[5pt]
+			\frac{\delta f_3}{\delta x_1} & \frac{\delta f_3}{\delta x_2} & \frac{\delta f_3}{\delta x_3} \\			
+		\end{bmatrix}_{\substack{x=\overline{x} \\ u=\overline{u}}}
+	\end{equation}
+	
+	\begin{equation}
+		f_u(\overline{x},\overline{u}) = B =
+		\begin{bmatrix}
+			\frac{\delta f_1}{\delta u} \\[5pt]
+			\frac{\delta f_2}{\delta u} \\[5pt]
+			\frac{\delta f_3}{\delta u}
+		\end{bmatrix}_{\substack{x=\overline{x} \\ u=\overline{u}}}
+	\end{equation}
+	
+		\begin{equation}
+		g_x(\overline{x},\overline{u}) = C =
+		\begin{bmatrix}
+			\frac{\delta g}{\delta x_1} 
+			\frac{\delta g}{\delta x_2}
+			\frac{\delta g}{\delta x_3}
+		\end{bmatrix}_{\substack{x=\overline{x} \\ u=\overline{u}}}
+	\end{equation}
+	
+	$g_u(\overline{x}, \overline{u}) = D = \left.\frac{\delta g}{\delta u}\right|_{\substack{x=\overline{x} \\ u=\overline{u}}}$
+	
+	
+	\begin{equation}
+		\begin{cases}
+			\dot{C_A}(t) &= \frac{q_0}{V}\cdot (C_{Af}-C_A(t))-k_0\cdot \exp \left({-\frac{E}{R\cdot T(t)}} \right) \cdot C_A(t) \\[7pt]
+			\dot{T}(t)&=\frac{q_0}{V}\cdot (T_f-T(t))+ \frac{(-\Delta H_r)\cdot k_0}{\rho \cdot C_p}\cdot \exp{\left( -\frac{E}{R \cdot T(t)} \right)}\cdot C_A(t) + \frac{UA}{V\cdot\rho\cdot C_p}\cdot(T_c(t) - T(t))\\[7pt]
+			\dot{T_c}(t) &= \frac{T_r(t)-T_c(t)}{\tau_c} \\[7pt]
+			y(t) &= C_A(t)
+		\end{cases}
+	\end{equation}
+	
+	\begin{equation}
+	A =
+		\begin{bmatrix}
+			-k_0\cdot \exp{\left(\frac{-E}{R\cdot \overline{T}}\right)}-\frac{q_0}{V} & - \frac{T_c\cdot E \cdot k_0}{R} \exp{\left(\frac{-E}{R\cdot\overline{T}} \right)}\cdot\frac{1}{\overline{T}^2} & 0 \\[10pt]
+			
+			\frac{-\Delta H_r \cdot k_0}{\rho C_p} \cdot\exp{\left(\frac{-E}{R\cdot \overline{T}}\right)}&-\frac{q_0}{V}+ (\frac{\overline{C}_A\cdot (-\Delta H_r)\cdot k_0}{\rho\cdot C_p} \exp{\left(\frac{E}{R \cdot\overline{T}} \right)}\cdot\frac{E}{R\cdot\overline{T}^2}) - \frac{UA}{V\cdot\rho\cdot C_p}  & \frac{UA}{V\cdot\rho\cdot C_p} \\[10pt]
+			
+			
+			0 & 0 & -\frac{1}{\tau_c} \\			
+		\end{bmatrix}
+	\end{equation}
+	
+	$B = \begin{bmatrix}
+		0 \\[5pt]
+		0 \\[5pt]
+		\frac{1}{\tau_c}
+	\end{bmatrix}$
+	
+		$C = \begin{bmatrix}
+		1 &
+		0 &
+		0 
+	\end{bmatrix}$
+	
+	$D= 0$
+\end{document}
