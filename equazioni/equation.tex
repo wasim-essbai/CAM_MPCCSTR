@@ -107,9 +107,9 @@
 	\begin{equation}
 	A =
 		\begin{bmatrix}
-			-k_0\cdot \exp{\left(\frac{-E}{R\cdot \overline{T}}\right)}-\frac{q_0}{V} & - \frac{T_c\cdot E \cdot k_0}{R} \exp{\left(\frac{-E}{R\cdot\overline{T}} \right)}\cdot\frac{1}{\overline{T}^2} & 0 \\[10pt]
+			-k_0\cdot \exp{\left(\frac{-E}{R\cdot \overline{T}}\right)}-\frac{q_0}{V} & - \frac{\overline{C}_A\cdot E \cdot k_0}{R} \exp{\left(\frac{-E}{R\cdot\overline{T}} \right)}\cdot\frac{1}{\overline{T}^2} & 0 \\[10pt]
 			
-			\frac{-\Delta H_r \cdot k_0}{\rho C_p} \cdot\exp{\left(\frac{-E}{R\cdot \overline{T}}\right)}&-\frac{q_0}{V}+ (\frac{\overline{C}_A\cdot (-\Delta H_r)\cdot k_0}{\rho\cdot C_p} \exp{\left(\frac{E}{R \cdot\overline{T}} \right)}\cdot\frac{E}{R\cdot\overline{T}^2}) - \frac{UA}{V\cdot\rho\cdot C_p}  & \frac{UA}{V\cdot\rho\cdot C_p} \\[10pt]
+			\frac{-\Delta H_r \cdot k_0}{\rho C_p} \cdot\exp{\left(\frac{-E}{R\cdot \overline{T}}\right)}&-\frac{q_0}{V}+ (\frac{\overline{C}_A\cdot (-\Delta H_r)\cdot k_0}{\rho\cdot C_p} \exp{\left(-\frac{E}{R \cdot\overline{T}} \right)}\cdot\frac{E}{R\cdot\overline{T}^2}) - \frac{UA}{V\cdot\rho\cdot C_p}  & \frac{UA}{V\cdot\rho\cdot C_p} \\[10pt]
 			
 			
 			0 & 0 & -\frac{1}{\tau_c} \\			
@@ -137,7 +137,6 @@
 		\begin{aligned}
 			\min_\textbf{u} \quad & J(x(k),u(.))=\sum_{j=0}^{N-1} \lVert x(j)\rVert_Q^2 + \lVert u(j)\rvert_R^2 + \lVert x(N) \rVert_S^2 \\
 			\textrm{s.t.} \quad & x(0) = x(k) \\
-								& x(0) = x(k) \\
 								& x(j+1) = Ax(j) + Bu(j) \\
 								& x(j) \in \mathcal{X}, u(j) \in \mathcal{U} \\
 								& x(N) \in \mathbb{X}_f \\
